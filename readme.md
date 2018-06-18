@@ -159,5 +159,67 @@ html{
 * Attention au VH et à son contenu. 100 vh = 100vh quoi qu'il arrive.
 * VW : très utile pour les interface fluides.
 
+## Travailler avec Github
+
+### Cloner le projet 
+
+```
+git clone git@lien-ssh
+```
+
+### Créer une branche 
+```
+git checkout -b nom_branche
+````
+
+### Résoudre les issues 
+```
+git add .
+git commit -m "nom_issue"
+```
+
+### Ajouter les issues traitées sur github
+```
+git push origin nom_branche
+```
+
+## Utiliser une font-face 
+
+### C'est quoi ?
+Ne pas être limité par les polices prédéfinies. 
+
+### Exemple d'utilisation 
+
+```
+@font-face {
+  font-family : "Raleway";
+  src : ('/fonts/raleway.eot');
+  }
+```
+### Quelles sont les limites ?
+
+Le chargement de la page peut être plus long car le fichier de la police et la page sont chargés en même temps. 
+
+Les navigateurs n'arrivent parfois pas à interpréter le code correctement. Pour résoudre ces problèmes d'incompatibilité, il faut ajouter certains critères pour que le code s'affiche correctement. Exemple : télécharger la police dans tous les formats tels que .woff, .svg, .eot
+
+## Positionnement des éléments
+
+### Absolute
+Permet de positionner un élément par rapport à son élément parent.
+
+### Relative
+Permet de placer un élément par rapport à sa position initiale.
+
+### Sticky 
+Permet de maintenir la postion d'un objet à une endroit précis dès que celui-ci devient hors de portée (quand on scroll dans la page). 
+
+### Fixe
+Permet de placer l'élément où on le souhaite dans la page. Celui-ci restera visible peut importe où l'on se trouve sur la page. 
+
+
+
+
+
+
 ## Liens utiles :
 * [Caniuse]https://caniuse.com/#feat=viewport-units
