@@ -202,7 +202,7 @@ Le chargement de la page peut être plus long car le fichier de la police et la 
 
 Les navigateurs n'arrivent parfois pas à interpréter le code correctement. Pour résoudre ces problèmes d'incompatibilité, il faut ajouter certains critères pour que le code s'affiche correctement. Exemple : télécharger la police dans tous les formats tels que .woff, .svg, .eot
 
-## Positionnement des éléments
+## Positionner des éléments
 
 ### Absolute
 Permet de positionner un élément par rapport à son élément parent.
