@@ -216,7 +216,42 @@ Permet de maintenir la postion d'un objet à une endroit précis dès que celui-
 ### Fixe
 Permet de placer l'élément où on le souhaite dans la page. Celui-ci restera visible peut importe où l'on se trouve sur la page. 
 
+## CSS Grid 
 
+Il s'agit d'une grille à 2 dimensions (colonnes et lignes). 
+La grille est entièrement paramétrable : nombre de lignes, taille des goutières. 
+Exemple : 
+```
+ grid-template-columns: 250px 400px;
+  grid-template-rows: 100px 300px;
+  ```  
+Le comportement de chaque élément est personnalisable en css  : l'ordre, le nombre de colonne que prendra l'élément, ... 
+Exemple : 
+```
+nav {
+  grid-column: 1; grid-row: 1;
+}
+section {
+  grid-column: 2; grid-row: 1;
+}
+article {
+  grid-column: 1; grid-row: 2;
+}
+```
+
+### Une autre unité de mesure
+
+Le fr. Celui-ci définit une fraction de l'espace disponible.
+
+Exemple : 
+```
+grid-template-columns: repeat(3, 1fr);
+```
+Ici, nous aurons une grille comportant 3 colonnes occupant 1/3 de l'espace disponible restant (en fonction des margin et padding renseignés).  
+
+### Astuce : 
+
+Utiliser l'édition développeur de Firefox qui propose une visualisation de la grille. Cela permet de comprendre le comportement de chaque élément par rapport à la grille. 
 
 
 
